@@ -52,6 +52,9 @@ public class Main {
 			System.out.println("Marka :"+job.getTruck().getBrand());
 			System.out.println("Model :"+job.getTruck().getModel());
 			System.out.println("Sürücü Bilgileri");
+			System.out.println("İsim : "+job.getDispacher().getName()+" "+job.getDispacher().getSurname());
+		 	System.out.println("Telefon : "+job.getDispacher().getPhone());
+		 	System.out.println("E-Posta : "+job.getDispacher().getMail());
 
 		}
 
