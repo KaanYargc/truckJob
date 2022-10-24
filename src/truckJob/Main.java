@@ -34,8 +34,27 @@ public class Main {
 		jobs.add(new Job("Ostim Organize Sanayi/Ankara", "İkitelli Organize Sanayi/İstanbu", 12843.35, 24348.93, 423, companies.get(0), trucks.get(0), dispachers.get(0)));
 		jobs.add(new Job("İzmir", "Samsun", 34578.03, 28123.47, 2147, companies.get(1), trucks.get(1) ,dispachers.get(1) ));
 		jobs.add(new Job("Bolu", "Ankara", 23578.03, 08123.47, 3247, companies.get(2), trucks.get(2) ,dispachers.get(2) ));
+		
+		for(Job job:jobs) {
+			System.out.println("<------"+job.getJobFrom()+"-"+job.getJobDestination()+"------>");
+			System.out.println("---İş Bilgileri---");
+			System.out.println("Nereden :"+job.getJobFrom());
+			System.out.println("Nereye :"+job.getJobDestination());
+			System.out.println("Tutar :"+job.getCost()+"TL");
+			System.out.println("Ağırlık :"+job.getWeight()+"KG");
+			System.out.println("Mesafe :"+job.getDestinationRange()+"KM");
+			System.out.println("---Müşteri Bilgileri---");
+			System.out.println("Şirekt Adı :"+job.getCompany().getName());
+			System.out.println("Şirket Telefon"+job.getCompany().getPhone());
+			System.out.println("Şirket Adresi"+job.getCompany().getAddress());
+			System.out.println("---Araç Bilgiler---");
+			System.out.println("Plaka :"+job.getTruck().getPlateName());
+			System.out.println("Marka :"+job.getTruck().getBrand());
+			System.out.println("Model :"+job.getTruck().getModel());
+			System.out.println("Sürücü Bilgileri");
+
+		}
 
 	}
 
 }
-
